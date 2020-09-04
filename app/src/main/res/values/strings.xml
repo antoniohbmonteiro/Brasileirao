@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Brasileirao</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="item_games_date_time">%1$s - %2$s</string>
+    <string name="game_details_round">Campeonato Brasileiro — rodada %d</string>
+    <string name="bottomsheet_live_game_title">Lance a Lance</string>
+
+</resources>
