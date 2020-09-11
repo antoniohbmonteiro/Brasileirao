@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "9fb60e65-f801-4c7b-8fae-e95f45156d2e",
+		"name": "Brasileirao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getGames",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://brasileiraoapi-dev.sa-east-1.elasticbeanstalk.com/api/games",
+					"protocol": "http",
+					"host": [
+						"brasileiraoapi-dev",
+						"sa-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTeams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://brasileiraoapi-dev.sa-east-1.elasticbeanstalk.com/api/teams",
+					"protocol": "http",
+					"host": [
+						"brasileiraoapi-dev",
+						"sa-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addLiveGame",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"text\",\r\n    \"title\":\"VAI NO VAR!\",\r\n    \"message\":\"O árbitro Rafael Traci para o jogo e vai até a cabine de vídeo. Jogada revisada é do chute de Vitinho, desviado na mão de Kannemann.\",\r\n    \"time\":\"1º Tempo\",\r\n    \"minutes\":\"22'\",\r\n    \"gameId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://brasileiraoapi-dev.sa-east-1.elasticbeanstalk.com/api/liveGames",
+					"protocol": "http",
+					"host": [
+						"brasileiraoapi-dev",
+						"sa-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"liveGames"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addGame",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"round\":1,\r\n\t\"day\":\"25/08\",\r\n\t\"hour\":\"19:00\",\r\n\t\"homeTeamId\":3,\r\n\t\"guestTeamId\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://brasileiraoapi-dev.sa-east-1.elasticbeanstalk.com/api/games",
+					"protocol": "http",
+					"host": [
+						"brasileiraoapi-dev",
+						"sa-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"games"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
